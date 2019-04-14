@@ -1,0 +1,34 @@
+package(default_visibility = ["//visibility:public"])
+scala_library(
+
+    name = "tls",
+    srcs = [
+        "//tls/src/main/java/com/iluwatar/tls:sources"
+    ],
+    deps = [
+        "//tls/src/main/java/com/iluwatar/tls:tls" , 
+        "//tls:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+
+scala_library(
+
+    name = "tls",
+    srcs = [
+        "//tls/src/main/java/com/iluwatar/tls:sources"
+    ],
+    deps = [
+        "//tls:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+sources()

@@ -1,0 +1,29 @@
+package(default_visibility = ["//visibility:public"])
+
+scala_library(
+    name = "main_dependencies",
+    deps = [
+        "@ch_qos_logback_logback_classic",
+        "@ch_qos_logback_logback_core",
+        "@org_scala_lang_scala_library",
+        "@org_slf4j_slf4j_api"
+    ],
+)
+     
+
+
+scala_library(
+    name = "tests_dependencies",
+    testonly = 1,
+    deps = [
+        "@org_junit_jupiter_junit_jupiter_api",
+        "@org_junit_jupiter_junit_jupiter_engine",
+        "main_dependencies"
+    ],
+)
+     
+
+filegroup(
+    name = "coordinates",
+    srcs = ["MANIFEST.MF"],
+)

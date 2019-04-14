@@ -1,0 +1,40 @@
+package(default_visibility = ["//visibility:public"])
+scala_library(
+    testonly = 1,
+    
+    name = "tls",
+    srcs = [
+        "//tls/src/test/java/com/iluwatar/tls:sources"
+    ],
+    deps = [
+        "//tls:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+
+specs2_unit_test(
+    
+    
+    
+    name = "tls",
+    srcs = [
+        "//tls/src/test/java/com/iluwatar/tls:sources"
+    ],
+    deps = [
+        "//tls/src/test/java/com/iluwatar/tls:tls" , 
+        "//tls:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+    data = ["//tls:coordinates"],
+    jvm_flags = ["-Dexisting.manifest=$(location //tls:coordinates)"],
+     
+)
+
+sources()

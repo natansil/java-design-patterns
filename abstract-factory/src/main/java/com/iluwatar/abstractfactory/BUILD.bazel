@@ -1,0 +1,34 @@
+package(default_visibility = ["//visibility:public"])
+scala_library(
+
+    name = "abstractfactory",
+    srcs = [
+        "//abstract-factory/src/main/java/com/iluwatar/abstractfactory:sources"
+    ],
+    deps = [
+        "//abstract-factory/src/main/java/com/iluwatar/abstractfactory:abstractfactory" , 
+        "//abstract-factory:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+
+scala_library(
+
+    name = "abstractfactory",
+    srcs = [
+        "//abstract-factory/src/main/java/com/iluwatar/abstractfactory:sources"
+    ],
+    deps = [
+        "//abstract-factory:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+sources()

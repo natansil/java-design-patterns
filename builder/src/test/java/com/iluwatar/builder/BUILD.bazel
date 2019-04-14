@@ -1,0 +1,40 @@
+package(default_visibility = ["//visibility:public"])
+scala_library(
+    testonly = 1,
+    
+    name = "builder",
+    srcs = [
+        "//builder/src/test/java/com/iluwatar/builder:sources"
+    ],
+    deps = [
+        "//builder:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+
+specs2_unit_test(
+    
+    
+    
+    name = "builder",
+    srcs = [
+        "//builder/src/test/java/com/iluwatar/builder:sources"
+    ],
+    deps = [
+        "//builder/src/test/java/com/iluwatar/builder:builder" , 
+        "//builder:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+    data = ["//builder:coordinates"],
+    jvm_flags = ["-Dexisting.manifest=$(location //builder:coordinates)"],
+     
+)
+
+sources()

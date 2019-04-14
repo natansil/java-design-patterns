@@ -1,0 +1,40 @@
+package(default_visibility = ["//visibility:public"])
+scala_library(
+    testonly = 1,
+    
+    name = "abstractfactory",
+    srcs = [
+        "//abstract-factory/src/test/java/com/iluwatar/abstractfactory:sources"
+    ],
+    deps = [
+        "//abstract-factory:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+
+specs2_unit_test(
+    
+    
+    
+    name = "abstractfactory",
+    srcs = [
+        "//abstract-factory/src/test/java/com/iluwatar/abstractfactory:sources"
+    ],
+    deps = [
+        "//abstract-factory/src/test/java/com/iluwatar/abstractfactory:abstractfactory" , 
+        "//abstract-factory:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+    data = ["//abstract-factory:coordinates"],
+    jvm_flags = ["-Dexisting.manifest=$(location //abstract-factory:coordinates)"],
+     
+)
+
+sources()
