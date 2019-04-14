@@ -18,3 +18,9 @@ datanucleus.log
 *.log
 data-mapper/src/main/resources/log4j.xml
 event-sourcing/Journal.json
+
+tools/2nd_party_resolved_dependencies_current_branch.bzl
+tools/master_2nd_party_resolved_dependencies.bzl
+tools/third_party_deps_of_external_wix_repositories.bzl
+tools/*_2nd_party_resolved_dependencies.json
+tools/2nd_party_resolved_dependencies/*
