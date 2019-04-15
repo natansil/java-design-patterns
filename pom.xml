@@ -58,6 +58,7 @@
         <module>abstract-factory</module>
         <module>tls</module>
         <module>builder</module>
+        <module>iterator</module>
         <!-- <module>factory-method</module>
         <module>prototype</module>
         <module>singleton</module>
@@ -73,7 +74,6 @@
         <module>chain</module>
         <module>command</module>
         <module>interpreter</module>
-        <module>iterator</module>
         <module>mediator</module>
         <module>memento</module>
         <module>model-view-presenter</module>
