@@ -1,0 +1,2 @@
+load("//:macros.bzl", "sources")
+load("//:junit5.bzl", "java_junit5_test")

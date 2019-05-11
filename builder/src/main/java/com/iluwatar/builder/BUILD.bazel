@@ -1,0 +1,17 @@
+package(default_visibility = ["//visibility:public"])
+java_library(
+
+    name = "builder",
+    srcs = [
+        "//builder/src/main/java/com/iluwatar/builder:sources"
+    ],
+    deps = [
+        "//builder:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+sources()

@@ -1,0 +1,19 @@
+package(default_visibility = ["//visibility:public"])
+java_library(
+
+    name = "agg=._bst_list",
+    srcs = [
+        "//iterator/src/main/java/com/iluwatar/iterator/bst:sources" , 
+        "//iterator/src/main/java/com/iluwatar/iterator/list:sources" , 
+        "//iterator/src/main/java/com/iluwatar/iterator:sources"
+    ],
+    deps = [
+        "//iterator:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+sources()
