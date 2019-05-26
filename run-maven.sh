@@ -22,4 +22,4 @@
 #
 
 set -x
-mvn clean install -DskipTests=true -t 1C
+mvn clean install -DskipTests=true -t 1C -DcreateChecksum=true
