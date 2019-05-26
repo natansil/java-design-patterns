@@ -1,3 +1,4 @@
+set -x
 java \
 -Drepo.root=/Users/natans/hackathon/java-design-patterns \
 -Drepo.url=git@github.com:iluwatar/java-design-patterns.git \
