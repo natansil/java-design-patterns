@@ -1,0 +1,17 @@
+package(default_visibility = ["//visibility:public"])
+java_library(
+
+    name = "tls",
+    srcs = [
+        "//tls/src/main/java/com/iluwatar/tls:sources"
+    ],
+    deps = [
+        "//tls:main_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+)
+
+sources()

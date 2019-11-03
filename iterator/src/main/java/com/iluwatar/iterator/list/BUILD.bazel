@@ -1,0 +1,4 @@
+
+sources(
+    visibility = ["//iterator/src/main/java/com/iluwatar/iterator:__pkg__"]
+)
