@@ -1,0 +1,21 @@
+package(default_visibility = ["//visibility:public"])
+java_junit5_test(
+    
+     
+    name = "builder",
+    srcs = [
+        "//builder/src/test/java/com/iluwatar/builder:sources"
+    ],
+    deps = [
+        "//builder/src/main/java/com/iluwatar/builder:builder" , 
+        "//builder:tests_dependencies"
+    ],
+    runtime_deps = [
+        
+    ],
+    
+    test_package = "com.iluwatar.builder",
+     
+)
+
+sources()
